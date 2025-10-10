@@ -1,0 +1,41 @@
+{
+  "$schema": "https://docs.cursor.sh/schema/v1.json",
+  "name": "React E-Commerce TS Project",
+  "description": "Professional responsive e-commerce web app built with React + TypeScript + Vite + Bootstrap + Redux Toolkit + React Query + Zod + Axios.",
+  "rules": [
+    {
+      "trigger": "generate",
+      "guidelines": [
+        "Use React 19 + TypeScript + Vite as the base stack.",
+        "Use only the following libraries: bootstrap, axios, react-router-dom, @reduxjs/toolkit, react-redux, react-hook-form, zod, @tanstack/react-query, react-helmet-async.",
+        "No Tailwind, MUI, or Sass — only Bootstrap 5.3 and hard CSS are allowed.",
+        "For responsiveness, use Bootstrap grid classes and utilities only (no media queries).",
+        "Follow a modular architecture: app/, components/, features/, routes/, styles/ folders.",
+        "Use React Query for API fetching, and Redux Toolkit for authentication/cart/order state.",
+        "All API calls must use axiosInstance.ts with interceptors for token handling.",
+        "Display a Bootstrap Spinner component during all loading states (queries, mutations, etc.).",
+        "Use functional components, hooks, and strict TypeScript types everywhere.",
+        "Add code comments to explain logic and props in every exported component.",
+        "Maintain clean formatting and consistent naming (PascalCase for components, camelCase for variables)."
+      ]
+    },
+    {
+      "trigger": "edit",
+      "guidelines": [
+        "Do not remove Bootstrap classNames.",
+        "Preserve functional typing and strict null safety.",
+        "Do not add new dependencies unless absolutely necessary.",
+        "Keep file structure consistent and avoid inline styles.",
+        "When adding new features, include loading spinner and error handling."
+      ]
+    },
+    {
+      "trigger": "test",
+      "guidelines": [
+        "Use react-testing-library conventions.",
+        "Mock axios and react-query network calls for unit testing.",
+        "Avoid snapshot tests; prefer behavioral assertions."
+      ]
+    }
+  ]
+}
